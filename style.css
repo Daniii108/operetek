@@ -11,16 +11,31 @@ body{
     text-shadow: 1px 1px 6px rgba(17, 3, 0, 0.99);
 }
 
-#bg-img{
+.container::before {
+    content: ""; /* Hozzáadunk egy üres tartalmat */
+    position: absolute; /* Abszolút pozíció a .container-höz képest */
+    top: 60px;
+    left: 20px;
+    right: 20px;
+    bottom: 10px;
     background-image: url(színház.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    padding: 360px;
-    background-color: rgba(255, 255, 255, 0.781);
-}    
-/* filter: brightness(0) invert(1); */
+    z-index: -1; /* Azért, hogy a háttérkép mögé helyezzük a .container-t */
+}
+
+.container {
+   background-color: rgba(255, 235, 205, 0.8);
+   padding: 20px;
+   margin: 60px auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50vh;
+   width: 70%;
+   border-radius: 6px;
+}
 
 .button {
     padding: 10px;
@@ -29,8 +44,14 @@ body{
     cursor: pointer;
     margin: 5px 10px 5px 1175px;
     border: none;
-    border-radius: 4px;
+    border-radius: 9px;
     position: absolute;
     top: 10px;
     right: 10px;
+}
+
+#regBtn{
+    position: absolute;
+    top: 10px;
+    right: 125px;
 }
