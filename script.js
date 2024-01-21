@@ -7,6 +7,11 @@ let isLoggedIn = false;
 const loginBtn = document.getElementById('loginBtn');
 const logoutBtn = document.getElementById('logoutBtn');
 
+// regisztrációs függvény
+function registrate(){
+    
+}
+
 // Bejelentkezés függvény
 function login() {
     isLoggedIn = true;

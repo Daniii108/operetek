@@ -10,7 +10,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Operett</title>
+    <title>Operett</title>    
 </head>
 <body>
     <h1 id="h1">Hopsasszé Operettszínház</h1>
@@ -34,15 +34,15 @@ session_start();
         // Check if the user is logged in
         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
             // User is logged in, display welcome message
-            echo "<h1>Welcome, " . htmlspecialchars($_SESSION['username']) . "!</h1>";
+            echo "<h1 style='color: white;'>Welcome, " . htmlspecialchars($_SESSION['username']) . "!</h1>";
             // You can add more protected content here
-        } else {
+        } //else {
             // User is not logged in, display a different message or redirect
-            echo "<h1>Please log in to view this page.</h1>";
+            //echo "<h1>Please log in to view this page.</h1>";
             // Optionally, redirect to login page
             // header('Location: login.php');
             // exit;
-        }
+        //}
         ?>
 
         

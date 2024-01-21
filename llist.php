@@ -11,9 +11,9 @@
 <?php
 // Database configuration
 $servername = "127.0.0.1";
-$username = "root"; // Replace with your database username
-$password = "root"; // Replace with your database password
-$dbname = "operett";
+$db_username = "root"; // Replace with your database username
+$db_password = ""; // Replace with your database password
+$db_name = "operett";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
